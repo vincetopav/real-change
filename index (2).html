@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Real Change con Vince</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Real Change de Javi Rodríguez: píldoras auditivas para reprogramar tu mentalidad desde la base. Pago único, acceso de por vida y 7 días de garantía.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Serif:ital@0;1&family=Figtree:wght@400;500;600;700&display=swap">
+<meta property="og:title" content="Real Change · No te falta información, te falta el desde dónde">
+<meta property="og:description" content="Píldoras auditivas de Javi Rodríguez para reprogramar tu mentalidad. Pago único, acceso de por vida y 7 días de garantía.">
+<meta property="og:image" content="/poster.jpg">
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '994933770360466');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=994933770360466&ev=PageView&noscript=1"></noscript>
+<!-- End Meta Pixel Code -->
+<style>
+/* Layout: una sola columna de lectura (VSL arriba), bandas que alternan bosque profundo y bosque medio; el latón marca solo las acciones y el lugar "Rico y consciente". */
+:root{
+  --night:#0d1714;      /* fondo principal: bosque nocturno */
+  --forest:#13221d;     /* banda alterna */
+  --moss:#1c3029;       /* superficies */
+  --line:#2a4239;       /* filetes */
+  --brass:#d2ab62;      /* acento: acciones y énfasis */
+  --brass-deep:#a9843f;
+  --parch:#efe7d6;      /* texto principal */
+  --mist:#a9b6ad;       /* texto secundario */
+  --ink:#16120a;        /* texto sobre latón */
+  --f-display:"Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --f-serif:"Instrument Serif", "Iowan Old Style", Georgia, serif;
+  --f-body:"Figtree", "Segoe UI", system-ui, -apple-system, sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{background:var(--night);color:var(--parch);font-family:var(--f-body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.band{padding-block:clamp(56px,9vw,104px);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.band.alt{background:var(--forest);border-block:1px solid var(--line)}
+.wrap{max-width:760px;margin:0 auto;display:grid;gap:24px}
+.wrap.wide{max-width:980px}
+.eyebrow{font:600 12px/1.2 var(--f-body);letter-spacing:.18em;text-transform:uppercase;color:var(--brass)}
+h1,h2,h3{font-family:var(--f-display);font-weight:800;letter-spacing:-.02em;line-height:1.05;text-wrap:balance;margin:0}
+h1{font-size:clamp(36px,6.4vw,68px)}
+h2{font-size:clamp(30px,4.6vw,48px)}
+h3{font-size:21px;font-weight:700;letter-spacing:-.01em;line-height:1.2}
+.it{font-family:var(--f-serif);font-style:italic;font-weight:400;color:var(--brass);letter-spacing:0}
+p{margin:0}
+.lead{font-size:clamp(18px,2.2vw,21px);color:var(--mist);max-width:62ch}
+.lead strong{color:var(--parch);font-weight:600}
+.center{text-align:center;justify-items:center}
+
+/* Botón principal */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;padding:18px 30px;border-radius:999px;background:linear-gradient(180deg,#e2bf7a,var(--brass) 55%,var(--brass-deep));color:var(--ink);font:700 18px/1.2 var(--f-body);text-decoration:none;text-align:center;box-shadow:0 10px 30px -10px rgba(210,171,98,.55),inset 0 1px 0 rgba(255,255,255,.35);transition:transform .15s ease,box-shadow .15s ease}
+.btn:hover{transform:translateY(-2px);box-shadow:0 16px 36px -10px rgba(210,171,98,.7),inset 0 1px 0 rgba(255,255,255,.35)}
+.btn:focus-visible,.ghost:focus-visible,summary:focus-visible,.play:focus-visible{outline:3px solid var(--parch);outline-offset:3px}
+.btn .price{font-weight:600;opacity:.75;padding-left:12px;border-left:1px solid rgba(22,18,10,.3)}
+.trust{font:600 12px/1.5 var(--f-body);letter-spacing:.1em;text-transform:uppercase;color:var(--mist);text-align:center}
+.trust span{white-space:nowrap}
+.ghost{display:inline-flex;padding:14px 24px;border-radius:999px;border:1px solid var(--brass);color:var(--brass);text-decoration:none;font-weight:600}
+.ghost:hover{background:rgba(210,171,98,.08)}
+
+/* Hero + VSL */
+.hero{padding-top:clamp(36px,6vw,64px);background:radial-gradient(ellipse 70% 50% at 50% 0%,rgba(210,171,98,.13),transparent 70%),var(--night)}
+.hero .wrap{max-width:900px}
+.cue{font:700 13px/1 var(--f-body);letter-spacing:.14em;text-transform:uppercase;color:var(--brass)}
+.vsl{position:relative;width:100%;max-width:100%;aspect-ratio:16/9;border-radius:14px;overflow:hidden;background:#000;box-shadow:0 30px 80px -30px rgba(0,0,0,.8),0 0 0 1px var(--line)}
+.vsl video{width:100%;height:100%;display:block;object-fit:cover}
+.play{position:absolute;inset:0;border:0;padding:0;cursor:pointer;background:linear-gradient(180deg,rgba(13,23,20,.15),rgba(13,23,20,.55));display:grid;place-items:center;color:var(--parch)}
+.play .disc{width:clamp(72px,11vw,104px);aspect-ratio:1;border-radius:50%;background:var(--brass);display:grid;place-items:center;box-shadow:0 0 0 0 rgba(210,171,98,.55);animation:pulse 2.4s ease-out infinite}
+.play .disc svg{width:38%;margin-left:8%;fill:var(--ink)}
+.play .lbl{position:absolute;bottom:18px;left:0;right:0;font:600 14px/1 var(--f-body);letter-spacing:.06em}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(210,171,98,.5)}80%,100%{box-shadow:0 0 0 26px rgba(210,171,98,0)}}
+
+/* Momentos */
+.moments{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.moments li{padding:18px 20px;background:var(--moss);border-radius:10px;font-family:var(--f-serif);font-size:22px;line-height:1.25;color:var(--parch)}
+.moments li::before{content:"“";color:var(--brass);margin-right:2px}
+.moments li::after{content:"”";color:var(--brass)}
+
+/* Tres lugares: un termostato */
+.places{display:grid;gap:0;border-left:2px solid var(--line);margin-left:6px}
+.place{position:relative;padding:18px 0 18px 28px;display:grid;gap:4px}
+.place::before{content:"";position:absolute;left:-8px;top:24px;width:14px;height:14px;border-radius:50%;background:var(--night);border:2px solid var(--line)}
+.place .k{font:700 20px/1.2 var(--f-display);color:var(--mist)}
+.place .v{font-family:var(--f-serif);font-style:italic;font-size:19px;color:var(--mist);opacity:.8}
+.place.on .k{color:var(--parch);font-size:clamp(24px,3vw,30px)}
+.place.on .v{color:var(--brass);opacity:1}
+.place.on::before{background:var(--brass);border-color:var(--brass);box-shadow:0 0 0 6px rgba(210,171,98,.18)}
+.quote{font-family:var(--f-serif);font-size:clamp(28px,4vw,40px);line-height:1.15;color:var(--parch);text-wrap:balance}
+.quote em{color:var(--brass)}
+
+/* Herramientas */
+.tools{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:28px}
+.tool{display:grid;gap:10px;align-content:start;min-width:0}
+.tool .glyph{width:52px;height:52px}
+.tool .glyph *{fill:none;stroke:var(--brass);stroke-width:1.6}
+.tool p{color:var(--mist)}
+.tool .tag{font-family:var(--f-serif);font-style:italic;font-size:19px;color:var(--parch)}
+.method{display:flex;flex-wrap:wrap;gap:10px 18px;color:var(--mist);font-size:15px;border-top:1px solid var(--line);padding-top:20px}
+.method b{color:var(--parch);font-weight:600}
+
+/* Módulos */
+.mods{display:grid;gap:10px}
+details{background:var(--moss);border-radius:10px;border:1px solid transparent}
+details[open]{border-color:var(--line)}
+summary{list-style:none;cursor:pointer;padding:18px 20px;display:grid;grid-template-columns:auto 1fr auto;gap:16px;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary .n{font:700 12px/1 var(--f-body);letter-spacing:.12em;text-transform:uppercase;color:var(--brass);white-space:nowrap}
+summary .t{font:700 18px/1.25 var(--f-display);min-width:0}
+summary .x{width:22px;height:22px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;color:var(--brass);font-weight:700;transition:transform .2s}
+details[open] summary .x{transform:rotate(45deg)}
+details ol,details .ans{margin:0;padding:0 20px 20px 20px;color:var(--mist)}
+details ol{list-style:none;display:grid;gap:8px;counter-reset:none}
+details ol li{display:grid;grid-template-columns:2.4em 1fr;gap:6px}
+details ol li span{font-variant-numeric:tabular-nums;color:var(--brass);font-weight:600}
+.bonus{display:grid;gap:0;margin:0;padding:0;list-style:none}
+.bonus li{display:grid;grid-template-columns:1fr auto;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.bonus li b{font-weight:600;color:var(--parch)}
+.bonus li em{font-style:normal;color:var(--mist)}
+.bonus .tg{font:600 11px/1 var(--f-body);letter-spacing:.14em;text-transform:uppercase;color:var(--brass);white-space:nowrap}
+
+/* Cómo funciona */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;counter-reset:s}
+.step{display:grid;gap:6px;padding-top:16px;border-top:2px solid var(--brass)}
+.step b{font:700 22px/1.1 var(--f-display)}
+.step span{color:var(--mist)}
+
+/* Para quién */
+.fit{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:36px}
+.fit ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.fit li{display:grid;grid-template-columns:22px 1fr;gap:10px;color:var(--mist)}
+.fit li::before{content:"";width:16px;height:16px;margin-top:5px;border-radius:50%;border:1.5px solid var(--brass);background:radial-gradient(circle,var(--brass) 35%,transparent 40%)}
+.fit .no li::before{border-color:var(--mist);background:linear-gradient(45deg,transparent 45%,var(--mist) 45%,var(--mist) 55%,transparent 55%)}
+.fit h3{margin-bottom:16px}
+
+/* Oferta */
+.offer{border:1px solid rgba(210,171,98,.45);border-radius:18px;padding:clamp(28px,5vw,48px);background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(210,171,98,.12),transparent 70%),var(--moss);display:grid;gap:22px;justify-items:center;text-align:center}
+.amount{font:800 clamp(64px,11vw,104px)/.9 var(--f-display);letter-spacing:-.04em}
+.amount sup{font-size:.28em;color:var(--brass);vertical-align:top;margin-left:4px;letter-spacing:0;position:relative;top:.5em}
+.chips{display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
+.chips span{padding:7px 14px;border-radius:999px;background:rgba(239,231,214,.06);border:1px solid var(--line);font-size:14px;color:var(--parch)}
+.guarantee{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:center;text-align:left;max-width:520px}
+.seal{width:68px;height:68px;border-radius:50%;border:1.5px dashed var(--brass);display:grid;place-items:center;text-align:center;font:800 24px/0.9 var(--f-display);color:var(--brass)}
+.seal small{display:block;font:600 9px/1 var(--f-body);letter-spacing:.14em;margin-top:2px}
+.guarantee p{color:var(--mist);font-size:15px}
+
+/* FAQ */
+.faq{display:grid;gap:10px}
+.faq summary{grid-template-columns:1fr auto}
+
+/* Embajadora */
+.amb{background:var(--parch);color:#1d2620;border-radius:18px;padding:clamp(26px,5vw,44px);display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:start}
+.mono{width:84px;height:84px;border-radius:50%;background:#1c3029;color:var(--brass);display:grid;place-items:center;font:400 italic 40px/1 var(--f-serif)}
+.amb .eyebrow{color:#7a5d24}
+.amb h2{font-size:clamp(26px,3.6vw,36px);color:#121a16;margin-top:8px}
+.amb p{color:#3c4a42;margin-top:12px;max-width:58ch}
+.amb .creds{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.amb .creds span{padding:7px 12px;border-radius:6px;background:#e3d9c3;font-size:14px;font-weight:600;color:#2a3530}
+.amb .ghost{margin-top:22px;border-color:#1c3029;color:#1c3029}
+.amb .ghost:hover{background:#1c3029;color:var(--parch)}
+
+footer{padding-block:40px 120px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));border-top:1px solid var(--line);color:var(--mist);font-size:13px;line-height:1.6}
+footer .wrap{gap:12px}
+footer b{color:var(--parch);font-weight:600}
+
+/* Barra fija de compra (móvil y al pasar el video) */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:20;padding:12px max(16px,env(safe-area-inset-right,0px)) calc(12px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));background:rgba(13,23,20,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:1px solid var(--line);display:flex;align-items:center;justify-content:center;gap:16px;transform:translateY(110%);transition:transform .3s ease}
+.sticky.show{transform:none}
+.sticky .msg{font-size:14px;color:var(--mist);min-width:0}
+.sticky .msg b{color:var(--parch)}
+.sticky .btn{padding:14px 22px;font-size:16px}
+@media (max-width:560px){
+  .amb{grid-template-columns:1fr}
+  .sticky .msg{display:none}
+  .sticky .btn{width:100%}
+  summary{gap:12px;padding:16px}
+  summary .n{display:none}
+  .bonus li{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<!-- ============ HERO + VSL ============ -->
+<header class="band hero">
+  <div class="wrap center">
+    <span class="eyebrow">Real Change · de Javi Rodríguez</span>
+    <h1>No te falta información.<br><span class="it">Te falta el desde dónde.</span></h1>
+    <p class="lead">Leíste, escuchaste, hiciste cursos y sigues en el mismo lugar. <strong>Real Change</strong> trabaja la raíz con píldoras auditivas de pocos minutos al día.</p>
+    <span class="cue">Dale play y míralo hasta el final</span>
+    <div class="vsl" id="vsl">
+      <video id="vslVideo" src="vsl.mp4" poster="poster.jpg" playsinline preload="metadata"></video>
+      <button class="play" id="playBtn" type="button" aria-label="Reproducir video">
+        <span class="disc"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3.5v17a1 1 0 0 0 1.5.86l14-8.5a1 1 0 0 0 0-1.72l-14-8.5A1 1 0 0 0 6 3.5Z"/></svg></span>
+        <span class="lbl">Video · 1:19</span>
+      </button>
+    </div>
+    <a class="btn js-buy" href="https://go.hotmart.com/Q108258850D?ap=6144" target="_blank" rel="noopener">Quiero empezar Real Change <span class="price js-price">$37</span></a>
+    <p class="trust"><span>+10.000 personas ya lo escuchan</span> · <span>Garantía 7 días</span> · <span>Acceso inmediato</span></p>
+  </div>
+</header>
+
+<!-- ============ MOMENTOS ============ -->
+<section class="band alt">
+  <div class="wrap">
+    <span class="eyebrow">¿Te suena alguna?</span>
+    <h2>Sientes que algo no funciona, pero no sabes ponerle nombre.</h2>
+    <ul class="moments">
+      <li>Me esfuerzo y no llegan los resultados.</li>
+      <li>No sé qué hacer, no sé qué decidir.</li>
+      <li>Leí libros e hice cursos, y sigo igual.</li>
+      <li>No es mi momento. No es para mí.</li>
+    </ul>
+    <p class="lead">No hace falta que sepas qué te frena. Los patrones que se repiten operan a nivel inconsciente, y Real Change te ayuda a darte cuenta de ellos.</p>
+  </div>
+</section>
+
+<!-- ============ ESPIRITUALIDAD PRAGMÁTICA ============ -->
+<section class="band">
+  <div class="wrap">
+    <span class="eyebrow">Espiritualidad pragmática</span>
+    <h2>Ser rico y consciente <span class="it">no es traición.</span></h2>
+    <p class="lead">Muchas personas creen, sin decirlo, que lo espiritual y lo próspero no caben en la misma persona. Esa creencia te deja a medias en las dos, y tu termostato financiero te devuelve siempre al mismo número.</p>
+    <div class="places" aria-label="Tres lugares">
+      <div class="place"><span class="k">Espiritual, pero en conflicto con el dinero</span><span class="v">paz sin recursos</span></div>
+      <div class="place"><span class="k">Con resultados, pero vacío por dentro</span><span class="v">dinero sin paz</span></div>
+      <div class="place on"><span class="k">Rico y consciente</span><span class="v">las dos cosas, sin culpa. Ese es el puente.</span></div>
+    </div>
+    <p class="quote">“El dinero no es el premio. <em>Es la consecuencia.</em>”</p>
+  </div>
+</section>
+
+<!-- ============ HERRAMIENTAS ============ -->
+<section class="band alt">
+  <div class="wrap wide">
+    <span class="eyebrow">Tres herramientas</span>
+    <h2>Lo que vas a practicar</h2>
+    <div class="tools">
+      <div class="tool">
+        <svg class="glyph" viewBox="0 0 52 52" aria-hidden="true"><path d="M8 44h36"/><path d="M14 44V34"/><path d="M22 44V26"/><path d="M30 44V18"/><path d="M38 44V9"/></svg>
+        <h3>El mapa</h3>
+        <span class="tag">Los niveles de conciencia de Hawkins</span>
+        <p>Distingues el miedo del amor y la fuerza del poder, y reconoces desde dónde estás actuando.</p>
+      </div>
+      <div class="tool">
+        <svg class="glyph" viewBox="0 0 52 52" aria-hidden="true"><path d="M10 40c8-2 14-8 16-16s8-14 16-16"/><circle cx="42" cy="9" r="3"/><path d="M10 40l-3 3"/></svg>
+        <h3>Dejar ir</h3>
+        <span class="tag">“Lo siento y lo dejo ir”</span>
+        <p>Una técnica, no una frase. Aprendes a soltar la carga en lugar de arrastrarla.</p>
+      </div>
+      <div class="tool">
+        <svg class="glyph" viewBox="0 0 52 52" aria-hidden="true"><ellipse cx="26" cy="22" rx="13" ry="17"/><path d="M26 39v8"/><path d="M18 47h16"/><path d="M20 14c2-3 5-4 8-4"/></svg>
+        <h3>El espejo</h3>
+        <span class="tag">El mundo es un espejo, no una ventana</span>
+        <p>Cambias tu percepción y cambia lo que proyectas en tu día a día.</p>
+      </div>
+    </div>
+    <p class="method"><span>Basado en <b>el mapa de Hawkins</b>, <b>Un Curso de Milagros</b> y herramientas de <b>PNL</b>.</span></p>
+  </div>
+</section>
+
+<!-- ============ CONTENIDO ============ -->
+<section class="band">
+  <div class="wrap">
+    <span class="eyebrow">Qué incluye</span>
+    <h2>6 módulos que se desbloquean a medida que avanzas</h2>
+    <p class="lead">Audios cortos (y algunos videos) dentro de la app de Millonarios Conscientes, en el espacio Real Change. Unos minutos al día, sin horarios.</p>
+    <div class="mods">
+      <details><summary><span class="n">Bienvenida</span><span class="t">Cambio verdadero</span><span class="x">+</span></summary>
+        <ol><li><span>1</span>Bienvenidos a Real Change</li><li><span>1.1</span>Implementa e interioriza (comunidad)</li><li><span>2</span>Comenzamos</li></ol></details>
+      <details><summary><span class="n">Módulo 1</span><span class="t">Saliendo del ilusionismo</span><span class="x">+</span></summary>
+        <ol><li><span>3</span>El conflicto es tu milagro</li><li><span>4</span>Una mente entrenada</li><li><span>5</span>Tres creencias que debes trascender para progresar</li></ol></details>
+      <details><summary><span class="n">Módulo 2</span><span class="t">Definiendo el nuevo camino</span><span class="x">+</span></summary>
+        <ol><li><span>6</span>El presente no existe</li><li><span>7</span>Ninguna acción amorosa es insignificante</li><li><span>8</span>Jugando al juego: Hakuna Matata</li><li><span>9</span>Cheque Milagroso y Carta de Héroes</li></ol></details>
+      <details><summary><span class="n">Módulo 3</span><span class="t">Integrando la negatividad</span><span class="x">+</span></summary>
+        <ol><li><span>10</span>Batman y el Joker</li><li><span>11</span>La poderosa técnica de Dejar Ir</li></ol></details>
+      <details><summary><span class="n">Módulo 4</span><span class="t">Generación de riqueza y abundancia</span><span class="x">+</span></summary>
+        <ol><li><span>12</span>Cómo elevar el termostato financiero</li><li><span>13</span>Coherencia y credibilidad: espiritualidad y pragmatismo</li><li><span>14</span>Manifestación acelerada consciente</li><li><span>15</span>7 pasos para ser rico y libre</li></ol></details>
+      <details><summary><span class="n">Módulo 5</span><span class="t">El nuevo mundo</span><span class="x">+</span></summary>
+        <ol><li><span>16</span>Potencia y reconoce tu valentía</li><li><span>17</span>La verdadera gratitud</li><li><span>18</span>La nueva espiritualidad</li><li><span>19</span>La importancia del contexto</li><li><span>20</span>Tu nueva familia</li></ol></details>
+      <details><summary><span class="n">Módulo 6</span><span class="t">El multiplicador de resultados</span><span class="x">+</span></summary>
+        <ol><li><span>21</span>Los 2 tipos de reconocimiento interno</li><li><span>22</span>“No sé qué hacer, no sé qué decidir; mi esfuerzo no está generando los resultados esperados”</li></ol></details>
+    </div>
+
+    <h3 style="margin-top:24px">Y además</h3>
+    <ul class="bonus">
+      <li><span><b>El Cheque Milagroso</b> <em>· decreto imprimible para llevar en la cartera</em></span><span class="tg">Bono</span></li>
+      <li><span><b>La Carta de Héroes</b> <em>· de ti, para ti</em></span><span class="tg">Bono</span></li>
+      <li><span><b>Francisco Solá</b> <em>· “Las 3 preguntas santas” y “Los 3 llamados” del contenido viral en redes</em></span><span class="tg">Invitado</span></li>
+      <li><span><b>Sajeeva Hurtado</b> <em>· cómo conectar con la riqueza y el dinero a través de la energía sexual (2 partes)</em></span><span class="tg">Invitada</span></li>
+      <li><span><b>Bonus especial</b> <em>· cómo comenzar a integrar la conciencia, la mentalidad y mejorar tu relación con el dinero</em></span><span class="tg">Bono</span></li>
+      <li><span><b>“De cero a emprendedor”</b> <em>· curso de Tito Gálvez en 3 módulos</em></span><span class="tg">Curso</span></li>
+      <li><span><b>Comunidad privada de WhatsApp</b> <em>· no caminas solo</em></span><span class="tg">Acceso</span></li>
+      <li><span><b>Programa vivo</b> <em>· se suma contenido nuevo y también es para ti</em></span><span class="tg">De por vida</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ CÓMO FUNCIONA ============ -->
+<section class="band alt">
+  <div class="wrap wide">
+    <span class="eyebrow">Cómo funciona</span>
+    <h2>Unos minutos al día, en cualquier lugar</h2>
+    <div class="steps">
+      <div class="step"><b>Escuchas</b><span>Una píldora corta, cuando quieras: en el carro, caminando, antes de dormir.</span></div>
+      <div class="step"><b>Practicas</b><span>Anotas, repites y aplicas la herramienta en tu día.</span></div>
+      <div class="step"><b>Integras</b><span>La repetición la vuelve tu forma natural de mirar.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PARA QUIÉN ============ -->
+<section class="band">
+  <div class="wrap wide">
+    <div class="fit">
+      <div>
+        <h3>Es para ti si…</h3>
+        <ul>
+          <li>Recién empiezas a tomar conciencia y no necesitas saber nada de crecimiento personal.</li>
+          <li>Eres empleada o empleado y quieres emprender, o ya emprendiste y estás empezando.</li>
+          <li>Eres coach, terapeuta o profesional independiente.</li>
+          <li>Sientes culpa por querer dinero, como si la paz y la abundancia estuvieran peleadas.</li>
+          <li>Ya trabajas en ti, pero tu entorno te devuelve siempre al mismo lugar.</li>
+          <li>Eres escéptico con lo espiritual: esto es práctica, no pensamiento mágico.</li>
+        </ul>
+      </div>
+      <div class="no">
+        <h3>No es para ti si…</h3>
+        <ul>
+          <li>Esperas un resultado económico garantizado.</li>
+          <li>Buscas clases en vivo, acompañamiento o aprender a monetizar (eso es Millonarios Conscientes).</li>
+          <li>Buscas terapia o un tratamiento de salud. Real Change no reemplaza atención médica, psicológica ni financiera.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OFERTA ============ -->
+<section class="band alt" id="oferta">
+  <div class="wrap">
+    <div class="offer">
+      <span class="eyebrow">Pago único</span>
+      <div class="amount"><span class="js-price">$37</span><sup>USD</sup></div>
+      <div class="chips"><span>6 módulos + bonos</span><span>Acceso inmediato</span><span>De por vida</span><span>En español</span></div>
+      <a class="btn js-buy" href="https://go.hotmart.com/Q108258850D?ap=6144" target="_blank" rel="noopener">Entrar a Real Change <span class="price js-price">$37</span></a>
+      <div class="guarantee">
+        <div class="seal">7<small>DÍAS</small></div>
+        <p><b style="color:var(--parch)">Garantía de 7 días.</b> Si no es para ti, escribes un correo y te devuelven el 100%, sin preguntas. Se gestiona por Hotmart.</p>
+      </div>
+      <p class="trust">Pago seguro por Hotmart · +10.000 personas ya lo escuchan</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="band">
+  <div class="wrap">
+    <span class="eyebrow">Preguntas frecuentes</span>
+    <h2>Antes de entrar</h2>
+    <div class="faq">
+      <details><summary><span class="t">Ya leí libros e hice cursos, y sigo igual. ¿Por qué esto sería distinto?</span><span class="x">+</span></summary><p class="ans">No te faltó información, te faltó el desde dónde. Real Change no suma más teoría: trabaja las creencias con práctica diseñada para repetirse, unos minutos cada día.</p></details>
+      <details><summary><span class="t">¿Por qué pagar si hay contenido gratis?</span><span class="x">+</span></summary><p class="ans">Lo gratis se escucha y se olvida. Esto es práctica diseñada para repetirse hasta volverse tu forma natural de mirar. Pagar es tomártelo en serio.</p></details>
+      <details><summary><span class="t">Soy escéptico con lo espiritual.</span><span class="x">+</span></summary><p class="ans">Mejor. Es espiritualidad pragmática. Llámalo Dios, la vida o el universo; lo que importa es que funciona como práctica.</p></details>
+      <details><summary><span class="t">¿Hay clases en vivo?</span><span class="x">+</span></summary><p class="ans">No. Todo está grabado y lo haces a tu ritmo. Las clases en vivo son parte de Millonarios Conscientes, que es otro programa.</p></details>
+      <details><summary><span class="t">¿Dónde está el contenido y por cuánto tiempo tengo acceso?</span><span class="x">+</span></summary><p class="ans">En la app de Millonarios Conscientes (web, Play Store y App Store), en el espacio Real Change. El acceso es de por vida.</p></details>
+      <details><summary><span class="t">¿Y si no me sirve?</span><span class="x">+</span></summary><p class="ans">Tienes 7 días de garantía con devolución del 100%, sin preguntas.</p></details>
+      <details><summary><span class="t">¿Es lo mismo que Millonarios Conscientes?</span><span class="x">+</span></summary><p class="ans">No. Real Change es para trabajar tus creencias por tu cuenta, con audios. Millonarios Conscientes es la membresía con clases en vivo, rutas de monetización y comunidad. Real Change es el primer escalón.</p></details>
+      <details><summary><span class="t">Si tengo un problema con mi compra, ¿a quién escribo?</span><span class="x">+</span></summary><p class="ans">Al soporte de Real Change por WhatsApp: <b style="color:var(--parch);user-select:all">+57 311 555 9542</b>.</p></details>
+    </div>
+    <p class="quote" style="margin-top:24px">“El momento no llega. <em>Se elige.</em>”</p>
+    <div><a class="btn js-buy" href="https://go.hotmart.com/Q108258850D?ap=6144" target="_blank" rel="noopener">Empezar Real Change <span class="price js-price">$37</span></a></div>
+  </div>
+</section>
+
+<!-- ============ EMBAJADORA ============ -->
+<section class="band alt">
+  <div class="wrap wide">
+    <div class="amb">
+      <div class="mono" aria-hidden="true">VM</div>
+      <div>
+        <span class="eyebrow">Quién te recomienda esto</span>
+        <h2>Vince Mazzola</h2>
+        <p>Soy embajadora oficial de Javi Rodríguez y formo parte de la comunidad de Millonarios Conscientes. Real Change es la puerta de entrada que recomiendo a quien quiere empezar a trabajar en su mentalidad.</p>
+        <p>Además acompaño a <b>mamás emprendedoras</b> con mentorías 1 a 1 de marketing y estrategia, para hacer crecer su negocio sin dejar de lado lo que más importa.</p>
+        <div class="creds"><span>Embajadora oficial de Javi Rodríguez</span><span>Miembro de Millonarios Conscientes</span><span>Mentorías 1:1 para mamás emprendedoras</span></div>
+        <a class="ghost" id="mentoriaBtn" href="#" target="_blank" rel="noopener" hidden>Conocer mi mentoría</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><b>Real Change</b> es un programa de Javi Rodríguez · Millonarios Conscientes. Esta página es de Vince Mazzola, embajadora afiliada: si compras desde aquí, recibo una comisión sin costo extra para ti.</p>
+    <p>Programa formativo de desarrollo de la conciencia. No sustituye atención médica, psicológica ni financiera profesional, y no garantiza resultados económicos. Los cambios dependen de tu propio proceso.</p>
+    <p>Este sitio no forma parte de Facebook ni de Meta Platforms, Inc., y no está respaldado por Facebook de ninguna manera. Facebook es una marca registrada de Meta Platforms, Inc.</p>
+    <p>© <span id="yr">2026</span> Vince Mazzola</p>
+  </div>
+</footer>
+
+<div class="sticky" id="sticky" aria-hidden="true">
+  <span class="msg"><b>Real Change</b> · pago único · garantía 7 días</span>
+  <a class="btn js-buy" href="https://go.hotmart.com/Q108258850D?ap=6144" target="_blank" rel="noopener" tabindex="-1">Quiero entrar <span class="price js-price">$37</span></a>
+</div>
+
+<script>
+/* =============================================================
+   CONFIGURACIÓN — cambia solo estas tres líneas
+   ============================================================= */
+const HOTMART_URL  = "https://go.hotmart.com/Q108258850D?ap=6144";        // Tu link de embajadora de Hotmart, ej: "https://pay.hotmart.com/XXXX?ap=XXXX"
+const PRECIO       = "$37";     // Precio que se muestra en los botones
+const MENTORIA_URL = "https://wa.me/573216999366?text=" + encodeURIComponent("Hola Vince, vengo de tu página de Real Change y quiero saber más sobre tus mentorías 1 a 1 para mamás emprendedoras.");        // Link a tu WhatsApp/Instagram/web de mentorías (vacío = botón oculto)
+/* ============================================================= */
+
+document.querySelectorAll(".js-price").forEach(el => el.textContent = PRECIO);
+if (HOTMART_URL) {
+  document.querySelectorAll(".js-buy").forEach(a => {
+    a.href = HOTMART_URL; a.target = "_blank"; a.rel = "noopener";
+    a.addEventListener("click", () => { try { window.fbq && fbq("track", "InitiateCheckout", { value: 37, currency: "USD", content_name: "Real Change" }); } catch (e) {} });
+  });
+}
+if (MENTORIA_URL) { const m = document.getElementById("mentoriaBtn"); m.href = MENTORIA_URL; m.hidden = false; }
+document.getElementById("yr").textContent = new Date().getFullYear();
+
+/* VSL: botón de play grande, luego controles nativos */
+const v = document.getElementById("vslVideo"), pb = document.getElementById("playBtn");
+pb.addEventListener("click", () => {
+  pb.hidden = true; v.controls = true;
+  const p = v.play(); if (p && p.catch) p.catch(() => {});
+  try { window.fbq && fbq("trackCustom", "VSLPlay"); } catch (e) {}
+});
+let vc50 = false;
+v.addEventListener("timeupdate", () => { if (!vc50 && v.duration && v.currentTime / v.duration >= 0.5) { vc50 = true; try { window.fbq && fbq("track", "ViewContent", { content_name: "Real Change VSL 50%" }); } catch (e) {} } });
+v.addEventListener("ended", () => { try { window.fbq && fbq("trackCustom", "VSLComplete"); } catch (e) {} });
+
+/* Barra fija: aparece después del video y se oculta en la oferta */
+const sticky = document.getElementById("sticky"), hero = document.querySelector(".hero"), offer = document.getElementById("oferta");
+let pastHero = false, atOffer = false;
+const upd = () => { const on = pastHero && !atOffer; sticky.classList.toggle("show", on); sticky.setAttribute("aria-hidden", on ? "false" : "true"); sticky.querySelector("a").tabIndex = on ? 0 : -1; };
+if ("IntersectionObserver" in window) {
+  new IntersectionObserver(([e]) => { pastHero = !e.isIntersecting; upd(); }).observe(hero);
+  new IntersectionObserver(([e]) => { atOffer = e.isIntersecting; upd(); }, { threshold: .25 }).observe(offer);
+}
+</script>
+</body>
+</html>
